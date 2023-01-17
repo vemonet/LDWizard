@@ -158,5 +158,8 @@
       "path": "lib/LDWizard-base.min.css",
       "maxSize": "25 kB"
     }
-  ]
+  ],
+  "overrides": {
+    "xpath-iterator": "../_EXCLUDED_"
+  }
 }
