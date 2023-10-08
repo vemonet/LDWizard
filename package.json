@@ -72,6 +72,7 @@
     "@mui/material": "^5.14.5",
     "@pandemicode/material-ui-dropzone": "^3.5.5",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.10",
+    "@rmlio/yarrrml-parser": "^1.6.1",
     "@svgr/webpack": "^6.5.1",
     "@triply/triplydb": "^6.0.8",
     "@triply/utils": "1.4.2",
