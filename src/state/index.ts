@@ -9,6 +9,11 @@ export const sourceState = atom<File | string | undefined>({
   default: undefined,
 });
 
+export const mappingSourceState = atom<File | string | undefined>({
+  key: "mappingSource",
+  default: undefined,
+});
+
 const matrixAtom = atom<Matrix | undefined>({
   key: "matrix",
   default: undefined,
@@ -35,7 +40,7 @@ export const matrixState = selector({
       reset(matrixAtom);
     } else {
       set(matrixAtom, newValue);
-      if (newValue) { 
+      if (newValue) {
         set(transformationConfigState, (state) => {
           return {
             ...state,
