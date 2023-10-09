@@ -90,7 +90,7 @@ You can create your own LD Wizard application by following these steps:
          // Your custom configuration comes here - see 1b. Configuration options mentioned below
       };
 
-      globalThis.config = wizardConfig;
+      globalThis.wizardConfig = wizardConfig;
       ```
 
 7. Run the following command to build your application:
