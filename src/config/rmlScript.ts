@@ -188,7 +188,7 @@ async function getRmlTransformationScript(configuration: TransformationConfigura
                   object: writer.blank( [{
                       predicate: namedNode("rml:reference"),
                       object: literal(`${colName}`),
-                    }]   
+                    }]
                   ),
                 },
               ])
