@@ -2,7 +2,7 @@ name: Build
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "*" ]
     paths:
     - "*.json"
     - "yarn.lock"
@@ -39,7 +39,8 @@ jobs:
 
     - name: Install dependencies
       run: |
-        yarn --frozen-lockfile
+        yarn
+        # yarn --frozen-lockfile
 
     - name: Build the LDWizard
       run: |
@@ -55,4 +56,4 @@ jobs:
 
     - name: Build the Docker image
       run: |
-        docker build . -f ./docker/Dockerfile -t ldwizard --build-arg CONFIG_FILE=webpack/runtimeConfig.ts
+        docker build . -f ./docker/Dockerfile -t ldwizard
