@@ -37,8 +37,8 @@ jobs:
       run: |
         npm install --global yarn
 
-    - name: Install Node 18 dependencies
-      if: ${{ matrix.node-version == '18.x' }}
+    - name: Install Node node-gyp dependency
+      if: ${{ matrix.node-version == '18.x' || matrix.node-version == '21.x' }}
       run: |
         yarn global add node-gyp
 
